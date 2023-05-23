@@ -21,8 +21,10 @@
                 <td>{{$project->title}}</td>
                 <td>{{$project->content}}</td>
                 <td>{{$project->slug}}</td>
-                <td>
-                    <a class="btn btn-primary" href="{{route('admin.projects.show', $project->slug)}}">Detail</a>
+                <td class="d-flex">
+                    <a class="btn btn-primary me-2" href="{{route('admin.projects.show', $project->slug)}}">Detail</a>
+                    <a class="btn btn-warning me-2" href="{{route('admin.projects.edit', $project->slug)}}">Edit</a>
+
                 </td>
             </tr>
         @endforeach
