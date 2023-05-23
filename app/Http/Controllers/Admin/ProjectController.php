@@ -85,7 +85,7 @@ class ProjectController extends Controller
         $validated_data['slug'] = Project::generateSlug($request->title);
 
         $project->update($validated_data);
-        return redirect()->route('admin.projects.show', ['project' => $project->slug])->with('status', 'Post modificato con successo!');
+        return redirect()->route('admin.projects.show', ['project' => $project->slug])->with('status', 'Progetto modificato con successo!');
     }
 
     /**
