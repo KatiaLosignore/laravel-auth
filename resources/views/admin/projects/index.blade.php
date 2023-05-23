@@ -2,6 +2,8 @@
 
 @section('content')
 
+<a href="{{route('admin.projects.create')}}" class="btn btn-primary mt-4 mb-4">Create a new Project</a>
+
 <table class="table">
     <thead>
       <tr>
@@ -20,7 +22,7 @@
                 <td>{{$project->content}}</td>
                 <td>{{$project->slug}}</td>
                 <td>
-                    <a class="btn btn-primary" href="{{route('admin.projects.show', $project->slug)}}">VEDI</a>
+                    <a class="btn btn-primary" href="{{route('admin.projects.show', $project->slug)}}">Detail</a>
                 </td>
             </tr>
         @endforeach
